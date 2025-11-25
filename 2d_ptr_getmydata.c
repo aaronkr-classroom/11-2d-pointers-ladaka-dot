@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <malloc.h>
+
+void getmaydata(int** q) {
+
+	*q = (int*)malloc(8);
+
+}
+
+int main(void) {
+
+	int* p;
+	getmydata(&p);
+	*p = 5;
+
+	printf("p(ÁÖ¼Ò):%p\t", p);
+	printf("p(°ª): %d\n", *p);
+	free(p);
+
+	return 0;
+}
